@@ -1,1 +1,5 @@
-../golden-template/rev-manifest.json
+{
+  "app.css": "app-4a1a30394e.css",
+  "app.js": "app-215ef0b31d.js",
+  "giphy.gif": "giphy-b67dd70f4c.gif"
+}
