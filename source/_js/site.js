@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 
-  $(document).foundation();
+  // $(document).foundation();
 
   // Email protector
   $('a[data-email-protector]').emailProtector()
