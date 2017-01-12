@@ -1,0 +1,102 @@
+clean:
+  # These folders will be deleted
+  - "_site"
+
+browsersync:
+  notify: true
+  open:   external
+  port:   3000
+  url:    "lifereboot.dev"
+  server:
+    basedir: "_site/"
+  xip:    false
+
+jekyll:
+  notification: "Running jekyll"
+  notificationIncremental: "Running jekyll incremental"
+
+javascript:
+  dest: "source/assets/"
+  siteDest: "_site/assets/"
+  # preload filename to output
+  filenamePreload: "app-preload.js"
+  # filename to output
+  filename: "app.js"
+  # notification message
+  notification: "Running JavaScript"
+  independentJS: "source/_js/independent/**/*"
+  src:
+    - "node_modules/jquery/dist/jquery.js"
+
+    # Core Foundation files, all Foundation components need this!
+    - "node_modules/foundation-sites/js/foundation.core.js"
+
+    # Individual Foundation components
+    # - "node_modules/foundation-sites/js/foundation.dropdownMenu.js"
+
+    # Libraries requried by Foundation
+    - "node_modules/what-input/what-input.js"
+
+    # Individual Foundation components
+    # If you aren't using a component, just remove it from the list
+    - "node_modules/foundation-sites/js/foundation.abide.js"
+    # - "node_modules/foundation-sites/js/foundation.accordion.js"
+    # - "node_modules/foundation-sites/js/foundation.accordionMenu.js"
+    # - "node_modules/foundation-sites/js/foundation.drilldown.js"
+    # - "node_modules/foundation-sites/js/foundation.dropdown.js"
+    # - "node_modules/foundation-sites/js/foundation.equalizer.js"
+    # - "node_modules/foundation-sites/js/foundation.interchange.js"
+    # - "node_modules/foundation-sites/js/foundation.magellan.js"
+    # - "node_modules/foundation-sites/js/foundation.offcanvas.js"
+    - "node_modules/foundation-sites/js/foundation.orbit.js"
+    # - "node_modules/foundation-sites/js/foundation.responsiveMenu.js"
+    # - "node_modules/foundation-sites/js/foundation.responsiveToggle.js"
+    - "node_modules/foundation-sites/js/foundation.reveal.js"
+    # - "node_modules/foundation-sites/js/foundation.slider.js"
+    # - "node_modules/foundation-sites/js/foundation.sticky.js"
+    # - "node_modules/foundation-sites/js/foundation.tabs.js"
+    # - "node_modules/foundation-sites/js/foundation.toggler.js"
+    # - "node_modules/foundation-sites/js/foundation.tooltip.js"
+    # - "node_modules/foundation-sites/js/foundation.util.box.js"
+    - "node_modules/foundation-sites/js/foundation.util.keyboard.js"
+    - "node_modules/foundation-sites/js/foundation.util.mediaQuery.js"
+    - "node_modules/foundation-sites/js/foundation.util.motion.js"
+    # - "node_modules/foundation-sites/js/foundation.util.nest.js"
+    - "node_modules/foundation-sites/js/foundation.util.timerAndImageLoader.js"
+    - "node_modules/foundation-sites/js/foundation.util.touch.js"
+    # - "node_modules/foundation-sites/js/foundation.util.triggers.js"
+
+    # Paths to other vendor plugins
+    # - "vendor/headroom.min.js"
+    - "vendor/jquery.email-protector.js"
+    # - "vendor/jquery.headroom.js"
+    - "vendor/jquery.royalslider.custom.min.js"
+    # - "vendor/skrollr.js"
+    # - "vendor/skrollr.stylesheets.js"
+
+    # Paths to your own project code are here
+    # All the files in this list are concatenated into app.js
+    - "source/_js/*"
+
+    # exclude these files/folders
+    - "!source/_js/independent/**/*"
+
+sass:
+  # Autoprefixer will make sure your CSS works with these browsers
+  compatibility:
+    - "ie >= 9"
+    - "safari >= 7"
+    - "ios >= 8"
+  dest: "source/assets/"
+  siteDest: "_site/assets/"
+  notification: "Running Sass"
+  src: "source/_styles/**/*"
+
+watch:
+  javascript: "source/_js/**/*"
+  sass: "source/_styles/**/*"
+  data: "source/{_data,_posts}/**/*.{yml,xml}"
+  pages:
+    - "source/**/*.{md,html,yml,xml}"
+    - "source/{_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
+    - "!_site/**/*.*"

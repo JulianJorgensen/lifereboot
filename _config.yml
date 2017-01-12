@@ -1,0 +1,33 @@
+---
+# meta tags
+default_title: "LifeReboot"
+default_description: ""
+default_image: ""
+
+# social media
+facebook: "bodymindspiritcoach"
+linkedin: "https://ca.linkedin.com/in/sarah-wall-7a530b105"
+google_plus: "http://google.com/+Bodymindspiritcoach777"
+youtube: "https://www.youtube.com/channel/UCjVlPzd2tAD33H7BBvI0d2A"
+
+# variables
+google-analytics-id:
+
+# modules
+skrollr: false
+
+# site config
+prod_url: "http://lifereboot.com/"
+
+env: development
+
+permalink: pretty
+source: ./source
+baseurl: /
+
+# Conversion
+incremental: true
+
+# sass
+sass:
+  style: :compressed

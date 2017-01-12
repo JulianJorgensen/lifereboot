@@ -1,0 +1,207 @@
+.section-landing{
+  position: relative;
+  background: linear-gradient(351.48deg, #81B7DC 0%, #41539D 100%);
+  @include content-color($white);
+  padding-top: rem-calc(30);
+
+  @include breakpoint(medium){
+    padding-top: 0;
+    height: rem-calc(570);
+    .landing-book{
+      top: rem-calc(-40);
+      left: rem-calc(-80);
+    }
+  }
+
+  @include breakpoint(large){
+    .landing-book{
+      top: rem-calc(20);
+      left: rem-calc(35);
+    }
+  }
+
+  h1{
+    text-shadow: 0 2px 4px rgba($black,0.5);
+
+    @include breakpoint(medium){
+      margin-top: rem-calc(80);
+      line-height: rem-calc(48);
+    }
+  }
+
+  .lead{
+    font-size: rem-calc(30);
+    line-height: rem-calc(36);
+    text-shadow: 0 2px 4px rgba($black,0.5);
+  }
+
+  .landing-book{
+    position: absolute;
+    right: rem-calc(-180);
+    width: rem-calc(250);
+    @include breakpoint(medium){
+      z-index: 99;
+      right: auto;
+      width: auto;
+    }
+  }
+
+  .landing-cta{
+    @include flex;
+    @include flex-align(center, bottom);
+    background: url('/images/Mandala.png') center 0;
+
+    .button{
+      margin-bottom: rem-calc(40);
+    }
+
+    @include breakpoint(medium){
+      position: absolute;
+      bottom: 0;
+      right: rem-calc(0);
+      width: rem-calc(536);
+      height: rem-calc(211);
+    }
+
+    @include breakpoint(large){
+      right: rem-calc(40);
+    }
+  }
+}
+
+#newsletter-signup{
+  padding: rem-calc(30);
+  .newsletter-signup-container{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+
+    input[type=submit]{
+      display: block;
+      width: 100%;
+      line-height: rem-calc(20);
+    }
+  }
+
+  @include breakpoint(medium){
+    padding: rem-calc(50) rem-calc(30) rem-calc(30);
+    .newsletter-signup-container{
+      width: rem-calc(620);
+      form{
+        @include flex;
+        @include flex-align(center, middle);
+        input{
+          max-width: 33%;
+          margin-right: rem-calc(10);
+        }
+        input[type=submit]{
+          line-height: rem-calc(20);
+        }
+      }
+    }
+  }
+  @include breakpoint(large){
+    .newsletter-signup-container{
+      left: rem-calc(100);
+    }
+  }
+}
+
+#about{
+  background: $white url('/images/Blue-Mandala.png') center top no-repeat;
+
+  q{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: $blue;
+    padding: 0 rem-calc(40);
+
+    @include breakpoint(large){
+      font-size: rem-calc(38);
+      line-height: rem-calc(46);
+    }
+  }
+}
+
+#order-now{
+  .vendors{
+    padding: rem-calc(30);
+    text-align: center;
+    @include breakpoint(large){
+      @include flex;
+      @include flex-align(center, middle);
+      justify-content: space-around;
+    }
+  }
+}
+
+#testimonials{
+  position: relative;
+  padding: rem-calc(30);
+  .quote-icon{
+    position: absolute;
+    width: rem-calc(50);
+    top: rem-calc(-20);
+    left: -10px;
+    @include breakpoint(large){
+      width: auto;
+      left: rem-calc(60);
+    }
+  }
+  #testimonials-slider{
+    width: 100%;
+    max-width: rem-calc(640);
+    margin: 0 auto;
+    padding-bottom: rem-calc(40);
+    author{
+      display: block;
+      font-style: italic;
+      font-size: 0.8em;
+      margin-top: rem-calc(10);
+    }
+    @include breakpoint(large){
+      padding-bottom: rem-calc(60);
+    }
+  }
+}
+
+#about-sarah{
+  @include breakpoint(medium){
+    background-image: url('/images/Sarah.png');
+    background-position: rem-calc(-50) bottom;
+    background-repeat: no-repeat;
+  }
+  background-color: #DEE8F1;
+  font-size: rem-calc(20);
+  padding: rem-calc(20 0 20);
+  h2{
+    text-align: left;
+    margin: 0;
+  }
+  .subtitle{
+    opacity: 0.8;
+    margin-bottom: rem-calc(30);
+  }
+  .socialmedia{
+    .fa{
+      margin-right: rem-calc(10);
+      font-size: rem-calc(30);
+    }
+  }
+}
+
+#share{
+  @include content-color($white);
+  padding: rem-calc(30);
+  .socialmedia-icons{
+    @include flex;
+    @include flex-align(center, middle);
+    svg{
+      margin-right: rem-calc(20);
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

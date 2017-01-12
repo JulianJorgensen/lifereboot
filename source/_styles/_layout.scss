@@ -1,0 +1,59 @@
+body{
+  font-size: rem-calc(24);
+}
+
+#site-container{
+  max-width: rem-calc(1024);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section{
+  background-color: $grey90;
+  padding: rem-calc(30) 0;
+
+  @include breakpoint(large){
+    padding: rem-calc(60) 0;
+  }
+
+  h2{
+    text-align: center;
+    font-weight: 900;
+
+    @include breakpoint(large){
+      margin: rem-calc(0 0 50);
+    }
+  }
+}
+
+.section-blue{
+  background: linear-gradient(346.99deg, $lightBlue 0%, $darkBlue 100%);
+}
+
+// buttons
+.button{
+  box-shadow: 3px 3px 8px 0 rgba($black,0.5);
+
+  &.primary{
+    background: linear-gradient(345.42deg, #FFC902 0%, #FF9901 100%);
+  }
+}
+
+.separator{
+  width: 80%;
+  height: rem-calc(1);
+  margin: rem-calc(15) auto;
+  background-color: $grey60;
+  &.small{
+    width: rem-calc(80);
+  }
+
+  @include breakpoint(large){
+    margin: rem-calc(30) auto;
+  }
+}
+
+.align-middle{
+  @include flex;
+  @include flex-align(middle);
+}

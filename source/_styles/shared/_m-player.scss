@@ -1,0 +1,56 @@
+// loading spinner
+.loading-spinner{
+  display: none;
+  position: fixed;
+  top: 50%;
+  margin-top: -rem-calc(15);
+}
+// watch now
+#player-watch{
+  font-size: rem-calc(40);
+  font-weight: bold;
+  margin-top: rem-calc(25);
+  .watch{
+    // border-bottom: 2px solid $red;
+    // color: $red;
+  }
+  .fa-play-circle{
+    position: relative;
+    bottom: -2px;
+  }
+}
+
+// full video
+.player-controls{
+  display: none;
+  font-weight: bold;
+  position: absolute;
+  z-index: 91;
+  top: rem-calc(30);
+  right: rem-calc(30);
+  height: rem-calc(60);
+  cursor: pointer;
+  width: rem-calc(150);
+  text-align: right;
+  @include flex();
+  @include flex-align(right, middle);
+  .player-watch,
+  .player-close{
+    position: absolute;
+  }
+
+  .player-close{
+    display: none;
+    font-size: rem-calc(80);
+    line-height: 0;
+  }
+}
+
+#player{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
