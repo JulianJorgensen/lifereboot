@@ -197,7 +197,7 @@
   .socialmedia-icons{
     @include flex;
     @include flex-align(center, middle);
-    svg{
+    a{
       margin-right: rem-calc(20);
       &:last-child{
         margin-right: 0;

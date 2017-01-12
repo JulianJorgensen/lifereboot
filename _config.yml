@@ -2,13 +2,11 @@
 # meta tags
 default_title: "Life Reboot Book | Download Free Workbook | Sarah Wall "
 default_description: "Life Reboot: An Inner Wisdom Guide To Finding Your Passion and Purpose, by Sarah Wall. Be inspired to look within to find answers to life's questions."
-default_image: ""
+default_image: "https://liferebootbook.com/images/lifereboot-book.png"
 
 # social media
 facebook: "bodymindspiritcoach"
-linkedin: "https://ca.linkedin.com/in/sarah-wall-7a530b105"
-google_plus: "http://google.com/+Bodymindspiritcoach777"
-youtube: "https://www.youtube.com/channel/UCjVlPzd2tAD33H7BBvI0d2A"
+fb_id: 1205828536110926 #this is for mind body spirit coach page
 
 # variables
 google-analytics-id:

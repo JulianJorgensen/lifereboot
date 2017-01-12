@@ -66,6 +66,8 @@ javascript:
     - "node_modules/foundation-sites/js/foundation.util.touch.js"
     # - "node_modules/foundation-sites/js/foundation.util.triggers.js"
 
+    - "node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js"
+
     # Paths to other vendor plugins
     # - "vendor/headroom.min.js"
     - "vendor/jquery.email-protector.js"

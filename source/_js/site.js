@@ -6,6 +6,8 @@ $(document).ready(function(){
 
   // $(document).foundation();
 
+  $('a').smoothScroll();
+
   // Email protector
   $('a[data-email-protector]').emailProtector()
 

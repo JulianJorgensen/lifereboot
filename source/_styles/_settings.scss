@@ -354,14 +354,14 @@ $input-placeholder-color: $medium-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(20);
 $input-background: $white;
-$input-background-focus: $white;
+$input-background-focus: darken($white, 5%);
 $input-background-disabled: $light-gray;
-$input-border: 1px solid transparent;
-$input-border-focus: 1px solid $dark-gray;
+$input-border: 0 solid transparent;
+$input-border-focus: 0 solid transparent;
 $input-shadow: 3px 3px 8px 0 rgba($black,0.5);
 $input-shadow-focus: 3px 3px 8px 0 rgba($black,0.4);
 $input-cursor-disabled: not-allowed;
-$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 $input-number-spinners: true;
 $input-radius: $global-radius;
 
@@ -369,7 +369,7 @@ $input-radius: $global-radius;
 // ---------
 
 $label-background: $primary-color;
-$label-color: foreground($label-background);
+// $label-color: foreground($label-background);
 $label-font-size: 0.8rem;
 $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
