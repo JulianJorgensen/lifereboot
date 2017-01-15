@@ -15,7 +15,7 @@ google-analytics-id:
 skrollr: false
 
 # site config
-prod_url: "http://lifereboot.com/"
+prod_url: "https://liferebootbook.com/"
 
 env: development
 
