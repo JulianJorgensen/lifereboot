@@ -18,6 +18,7 @@
     "browser-sync": "^2.10.0",
     "cross-spawn": "^2.1.4",
     "del": "^2.2.0",
+    "foundation-sites": "^6.3.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.2",
