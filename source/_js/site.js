@@ -2,10 +2,19 @@
 // SITE.JS
 // --------------------------------------------------
 
+$(document).foundation();
+
 $(document).ready(function(){
 
-  // $(document).foundation();
+  $("#newsletter-signup-form").on("submit", function(ev) {
+    ev.preventDefault();
+  });
 
+  $("#newsletter-signup-form").on("formvalid.zf.abide", function(e,frm) {
+    $.getJSON(this.action + "?callback=?",$(this).serialize());
+    $(".newsletter-signup-container").hide();
+    $("#newsletter-signup #thank-you").show();
+  });
   $('a').smoothScroll();
 
   // Email protector
@@ -18,7 +27,6 @@ $(document).ready(function(){
     navigateByClick: false,
     loopRewind: true,
     fadeinLoadedSlide: false,
-    autoHeight: true,
     sliderDrag: false,
     keyboardNavEnabled: true,
     numImagesToPreload: 1,

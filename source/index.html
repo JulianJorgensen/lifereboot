@@ -9,7 +9,7 @@ class: home
       <img class="landing-book" src="/images/lifereboot-book.png" alt="LifeReboot book" />
     </div>
     <div class="small-12 medium-6 columns">
-      <h1>How big are your dreams? What will it cost you <u>not</u> to pursue them?</h1>
+      <h1>How big are your dreams? What will it cost you <strong>not</strong> to <span class="nobr">pursue them?</span></h1>
       <p class="lead">Be inspired to look within to find answers to life’s questions.</p>
     </div>
   </div>
@@ -22,13 +22,21 @@ class: home
 <section id="newsletter-signup" class="section">
   <div class="newsletter-signup-container">
     <h3>SIGN UP FOR UPDATES AND FREE GIFTS</h3>
-    <form>
-      <input type="text" name="Name" id="name" placeholder="Your name" />
-      <input type="email" name="Email" id="email" placeholder="Your email" />
+    <form data-abide method="POST" action="https://liferebootbook.activehosted.com/proc.php" id="newsletter-signup-form" novalidate>
+      <input type="hidden" name="u" value="1" />
+      <input type="hidden" name="f" value="1" />
+      <input type="hidden" name="s" />
+      <input type="hidden" name="c" value="0" />
+      <input type="hidden" name="m" value="0" />
+      <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+      <input type="text" name="fullname" id="fullname" placeholder="Your name" required />
+      <input type="text" name="email" id="email" placeholder="Your email" pattern="email" required />
       <input type="submit" class="button secondary" value="SIGN UP" />
     </form>
     <small>By signing up you give permission for me to email you.</small>
   </div>
+  <div id="thank-you"><h2>Thanks for signing up</h2></div>
 </section>
 
 
@@ -41,7 +49,7 @@ class: home
       <q>Are you craving more out of life, from your job, your personal life, and relationships?</q>
     </div>
     <div class="small-12 medium-6 columns">
-      <h4>LEARN HOW TO...</h4>
+      <h4 id="learn-to">LEARN HOW TO...</h4>
       <ul>
         <li>Kick fear to the curb.</li>
         <li>Transform limiting beliefs.</li>
@@ -66,17 +74,17 @@ class: home
   <img class="quote-icon" src="/images/quote-icon.png" alt="Testimonial icon" />
 
   <div id="testimonials-slider" class="royalSlider rsDefault">
-    <div>
+    <div class="testimonial">
       <q><strong>One of the best ways to heal</strong> and move on with your life is to first - tell the truth about where you are now. Sarah, with her honesty and heartfelt vulnerability, will lovingly guide you to listen to your inner voice so you can choose your own next step. That step will bring you closer to your destiny.</q>
-      <author>Barry Spilchuk - Coauthor - A Cup of Chicken Soup for the Soul</author>
+      <author>Barry Spilchuk, Coauthor A Cup of Chicken Soup for the Soul</author>
     </div>
-    <div>
+    <div class="testimonial">
       <q>A masterful debut into a powerful story that invites you through a journey of self-discovery of inner wealth. It's impossible to read this book and not come away thinking differently about the choices we make and the pressing need for all of us to live a more awakened life with blissful purpose.</q>
-      <author>Colleen Walski author Growing Into Greatness</author>
+      <author>Colleen Walski, author Growing Into Greatness</author>
     </div>
-    <div>
+    <div class="testimonial">
       <q>Life Reboot is simply a must read! It is a great resource for anyone looking to make changes in their lives and don’t know where to start. If you want to change your outer life, you must first learn to go within. If you want to improve your body, mind and health, let Sarah guide you on an inner journey that will empower you to take your own journey of self-discovery deep within, finding some incredible jewels along the way.</q>
-      <author>Kathy Tuccaro, author Dream Big! Overcoming a Lifetime of Trauma & Abuse and Dreams That Led to Success</author>
+      <author>Kathy Tuccaro, author Dream Big!</author>
     </div>
   </div>
 </section>
@@ -87,20 +95,21 @@ class: home
     <div class="small-12 medium-7 medium-offset-5 columns">
       <h2>SARAH WALL</h2>
       <h4 class="subtitle">AUTHOR | SPEAKER | ENTREPRENEUR</h4>
-      <p>Sarah is the owner of Body Mind Spirit Coaching. She supports people to break through fear and limiting beliefs by clearing the clutter of the mind, using simple techniques that have immediate and powerful impact. She is also the co-founder of Yoga Vacations, providing a safe space for people to explore their inner world through meditation, while traveling to beautiful destinations.</p>
-      <p>Sarah’s own journey into yoga, which began twenty years ago, has taken her around the world many times and sparked her passion to give back. She’s a proud board member of the Helping Hands for India charity, which runs a school in northern India, providing free education to over 300 children. Incorporating mindfulness and meditation into her own life has been essential to her well-being when navigating life’s events and she’s excited to share her story to inspire others who are craving something more out of life.</p>
+      <p>Sarah is the owner of Body Mind Spirit Coaching. She supports people to break through fear and limiting beliefs by clearing the clutter of the mind, using simple techniques that have immediate and powerful impact. She is also the co-founder of Yoga Vacations, providing a safe space for people to explore their inner world through meditation, while traveling to <span class="nobr">beautiful destinations.</span></p>
+      <p>Sarah’s own journey into yoga, which began twenty years ago, has taken her around the world many times and sparked her passion to give back. She’s a proud board member of the Helping Hands for India charity, which runs a school in northern India, providing free education to over 300 children.</p>
+      <p>Incorporating mindfulness and meditation into her own life has been essential to her well-being when navigating life’s events and she’s excited to share her story to inspire others who are craving something more out of life.</p>
       <div class="row">
-        <div class="small-12 medium-5 columns text-center align-middle">
+        <div class="small-12 medium-5 columns text-center medium-text-left align-middle">
           <div class="socialmedia">
             <a href="https://www.facebook.com/bodymindspiritcoach/" target="_new"><i class="fa fa-facebook-f"></i></a>
             <a href="http://google.com/+Bodymindspiritcoach777" target="_new"><i class="fa fa-google-plus"></i></a>
             <a href="https://ca.linkedin.com/in/sarah-wall-7a530b105" target="_new"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
-        <div class="small-12 medium-5 columns text-right">
+        <div class="small-12 medium-5 columns text-center medium-text-right">
           <small>Partial proceeds donated to Helping Hands for India charity</small>
         </div>
-        <div class="small-2 text-right">
+        <div class="small-12 medium-2 text-center medium-text-right">
           <img src="/images/helping-hands-logo-transparent.png" alt="Helping Hands logo" />
         </div>
       </div>
@@ -111,7 +120,8 @@ class: home
 <section id="share" class="section section-blue">
   <h2>SHARE</h2>
   <div class="socialmedia-icons">
-    <a href="https://www.facebook.com/sharer/sharer.php?u=liferebootbook.com" target="new">{% include facebook-inverted.svg %}</a>
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u=liferebootbook.com" target="_blank">{% include facebook-inverted.svg %}</a>
     <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//liferebootbook.com&title=Life%20Reboot%20by%20Sarah%20Wall&summary=Life%20Reboot%3A%20An%20Inner%20Wisdom%20Guide%20To%20Finding%20Your%20Passion%20and%20Purpose%20-%20this%20book%20provides%20you%20with%20tools%20to%20create%20a%20life%20you%20love.%20Learn%20more.&source=https%3A//liferebootbook.com" target="new">{% include linkedin-inverted.svg %}</a>
     <a href="https://twitter.com/home?status=New%20book%20just%20launched%3A%20Life%20Reboot.%20An%20Inner%20Wisdom%20Guide%20To%20Finding%20Your%20Passion%20and%20Purpose.%20%23LifeRebootBook" target="new">{% include twitter-inverted.svg %}</a>
     <a href="https://pinterest.com/pin/create/button/?url=https://liferebootbook.com&media=https%3A//liferebootbook.com/images/lifereboot-book.png&description=The%20Life%20Reboot%20Book%20by%20author%20Sarah%20Wall" target="new">{% include pinterest-inverted.svg %}</a>

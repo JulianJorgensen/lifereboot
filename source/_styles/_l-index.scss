@@ -2,22 +2,10 @@
   position: relative;
   background: linear-gradient(351.48deg, #81B7DC 0%, #41539D 100%);
   @include content-color($white);
-  padding-top: rem-calc(30);
 
   @include breakpoint(medium){
     padding-top: 0;
     height: rem-calc(570);
-    .landing-book{
-      top: rem-calc(-40);
-      left: rem-calc(-80);
-    }
-  }
-
-  @include breakpoint(large){
-    .landing-book{
-      top: rem-calc(20);
-      left: rem-calc(35);
-    }
   }
 
   h1{
@@ -37,13 +25,24 @@
   }
 
   .landing-book{
-    position: absolute;
-    right: rem-calc(-180);
-    width: rem-calc(250);
     @include breakpoint(medium){
+      position: absolute;
       z-index: 99;
+      top: rem-calc(-40);
+      left: rem-calc(-60);
+      width: rem-calc(380);
+    }
+    @include breakpoint(medium-large){
       right: auto;
       width: auto;
+      top: auto;
+      left: auto;
+    }
+    @include breakpoint(large){
+      .landing-book{
+        top: rem-calc(20);
+        left: rem-calc(35);
+      }
     }
   }
 
@@ -72,6 +71,16 @@
 
 #newsletter-signup{
   padding: rem-calc(30);
+
+  #thank-you{
+    display: none;
+
+    h2{
+      margin: 0 !important;
+      color: $success-color;
+    }
+  }
+
   .newsletter-signup-container{
     text-align: center;
     margin: 0 auto;
@@ -92,11 +101,22 @@
         @include flex;
         @include flex-align(center, middle);
         input{
-          max-width: 33%;
           margin-right: rem-calc(10);
+          &[type=text]{
+            padding-left: rem-calc(20);
+            font-style: normal;
+            font-weight: bold;
+            font-size: rem-calc(16);
+            &::-webkit-input-placeholder{
+              text-transform: uppercase;
+            }
+          }
         }
         input[type=submit]{
+          max-width: rem-calc(120);
           line-height: rem-calc(20);
+          color: $white;
+          // background: linear-gradient(340deg, #5686B5 0%, #3F519E 60%);
         }
       }
     }
@@ -121,6 +141,13 @@
     @include breakpoint(large){
       font-size: rem-calc(38);
       line-height: rem-calc(46);
+    }
+  }
+
+  #learn-to{
+    margin-top: rem-calc(30);
+    @include breakpoint(medium){
+      margin-top: 0;
     }
   }
 }
@@ -153,6 +180,7 @@
   #testimonials-slider{
     width: 100%;
     max-width: rem-calc(640);
+    height: rem-calc(500);
     margin: 0 auto;
     padding-bottom: rem-calc(40);
     author{
@@ -161,21 +189,35 @@
       font-size: 0.8em;
       margin-top: rem-calc(10);
     }
+    @include breakpoint(medium){
+      height: rem-calc(350);
+    }
     @include breakpoint(large){
+      height: rem-calc(320);
       padding-bottom: rem-calc(60);
+    }
+
+    .rsSlide{
+      @include flex();
+      @include flex-align(middle, middle);
     }
   }
 }
 
 #about-sarah{
-  @include breakpoint(medium){
-    background-image: url('/images/Sarah.png');
-    background-position: rem-calc(-50) bottom;
-    background-repeat: no-repeat;
-  }
+  background-image: url('/images/Sarah.png');
+  background-position: rem-calc(0) bottom;
+  background-size: 300px;
+  background-repeat: no-repeat;
   background-color: #DEE8F1;
   font-size: rem-calc(20);
-  padding: rem-calc(20 0 20);
+  padding-bottom: rem-calc(500);
+
+  @include breakpoint(medium){
+    background-position: rem-calc(-50) bottom;
+    padding: rem-calc(20 0 20);
+    background-size: auto;
+  }
   h2{
     text-align: left;
     margin: 0;
@@ -185,9 +227,15 @@
     margin-bottom: rem-calc(30);
   }
   .socialmedia{
+    width: 100%;
+    margin-bottom: rem-calc(15);
+
     .fa{
       margin-right: rem-calc(10);
       font-size: rem-calc(30);
+    }
+    @include breakpoint(medium){
+      margin-bottom: 0;
     }
   }
 }
@@ -202,6 +250,12 @@
       margin-right: rem-calc(20);
       &:last-child{
         margin-right: 0;
+      }
+    }
+    svg{
+      width: rem-calc(60);
+      @include breakpoint(medium){
+        width: auto;
       }
     }
   }
