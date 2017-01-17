@@ -30,6 +30,7 @@ $(document).ready(function(){
     sliderDrag: false,
     keyboardNavEnabled: true,
     numImagesToPreload: 1,
+    allowCSS3: false,
     autoPlay: {
       // autoplay options go gere
       enabled: true,
