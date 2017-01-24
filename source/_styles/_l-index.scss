@@ -19,18 +19,19 @@
   }
 
   .lead{
-    font-size: rem-calc(30);
-    line-height: rem-calc(36);
+    font-size: rem-calc(22);
     text-shadow: 0 2px 4px rgba($black,0.5);
+    @include breakpoint(medium){
+      font-size: rem-calc(30);
+      line-height: rem-calc(36);
+    }
   }
 
   .landing-book{
     @include breakpoint(medium){
       position: absolute;
       z-index: 99;
-      top: rem-calc(-40);
-      left: rem-calc(-60);
-      width: rem-calc(380);
+      width: rem-calc(315);
     }
     @include breakpoint(medium-large){
       right: auto;
@@ -198,25 +199,37 @@
     }
 
     .rsSlide{
-      @include flex();
-      @include flex-align(middle, middle);
+      @include breakpoint(large){
+        @include flex();
+        @include flex-align(middle, middle);        
+      }
     }
   }
 }
 
 #about-sarah{
-  background-image: url('/images/Sarah.png');
-  background-position: rem-calc(0) bottom;
-  background-size: 300px;
-  background-repeat: no-repeat;
   background-color: #DEE8F1;
   font-size: rem-calc(20);
-  padding-bottom: rem-calc(500);
+  padding-bottom: 0;
+
+  #desktop-sarah{
+    @include flex();
+    align-items: flex-end;
+  }
+
+  #mobile-sarah{
+    @include flex();
+    align-items: flex-end;
+
+    padding-top: rem-calc(20);
+    order: 1;
+    @include breakpoint(medium){
+      order: 0;
+    }
+  }
 
   @include breakpoint(medium){
-    background-position: rem-calc(-50) bottom;
-    padding: rem-calc(20 0 20);
-    background-size: auto;
+    padding: rem-calc(20 0 0);
   }
   h2{
     text-align: left;
