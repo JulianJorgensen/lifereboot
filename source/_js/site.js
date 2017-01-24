@@ -28,6 +28,7 @@ $(document).ready(function(){
     loopRewind: true,
     fadeinLoadedSlide: false,
     sliderDrag: false,
+    sliderTouch: false,
     keyboardNavEnabled: true,
     numImagesToPreload: 1,
     allowCSS3: false,
