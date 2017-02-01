@@ -5,7 +5,9 @@
 
   @include breakpoint(medium){
     padding-top: 0;
-    height: rem-calc(570);
+    height: rem-calc(545);
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
   }
 
   h1{
@@ -36,12 +38,12 @@
     @include breakpoint(medium-large){
       right: auto;
       width: auto;
-      top: auto;
+      top: rem-calc(40);
       left: auto;
     }
     @include breakpoint(large){
       .landing-book{
-        top: rem-calc(20);
+        top: rem-calc(40);
         left: rem-calc(35);
       }
     }
@@ -59,13 +61,9 @@
     @include breakpoint(medium){
       position: absolute;
       bottom: 0;
-      right: rem-calc(0);
+      left: rem-calc(0);
       width: rem-calc(536);
       height: rem-calc(211);
-    }
-
-    @include breakpoint(large){
-      right: rem-calc(40);
     }
   }
 }
@@ -120,11 +118,6 @@
           // background: linear-gradient(340deg, #5686B5 0%, #3F519E 60%);
         }
       }
-    }
-  }
-  @include breakpoint(large){
-    .newsletter-signup-container{
-      left: rem-calc(100);
     }
   }
 }

@@ -36,7 +36,7 @@ $(document).ready(function(){
       // autoplay options go gere
       enabled: true,
       pauseOnHover: true,
-      delay: 4000
+      delay: 8000
     }
   }).data('royalSlider');
 

@@ -6,7 +6,7 @@ browsersync:
   notify: true
   open:   external
   port:   3000
-  url:    "lifereboot.dev"
+  url:    "liferebootbook.dev"
   server:
     basedir: "_site/"
   xip:    false
