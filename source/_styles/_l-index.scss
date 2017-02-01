@@ -208,6 +208,7 @@
   #desktop-sarah{
     @include flex();
     align-items: flex-end;
+    padding-left: 0;
   }
 
   #mobile-sarah{
