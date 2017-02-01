@@ -3,15 +3,23 @@
   background: linear-gradient(351.48deg, #81B7DC 0%, #41539D 100%);
   @include content-color($white);
 
+  #landing-book-column{
+    order: -1;
+  }
+
   @include breakpoint(medium){
     padding-top: 0;
-    height: rem-calc(545);
+    height: rem-calc(600);
     padding-left: rem-calc(30);
     padding-right: rem-calc(30);
 
     #landing-book-column{
       @include flex-align(flex-end);
+      order: 1;
     }
+  }
+  @include breakpoint(medium-large){
+    height: rem-calc(545);
   }
 
   h1{
@@ -37,12 +45,12 @@
     @include breakpoint(medium){
       position: absolute;
       z-index: 99;
-      width: rem-calc(315);
+      width: rem-calc(350);
+      top: rem-calc(40);
     }
     @include breakpoint(medium-large){
       right: auto;
       width: auto;
-      top: rem-calc(40);
       left: auto;
     }
     @include breakpoint(large){
@@ -64,10 +72,15 @@
 
     @include breakpoint(medium){
       position: absolute;
+      left: 50%;
+      margin-left: rem-calc(-268);
       bottom: 0;
-      left: rem-calc(0);
       width: rem-calc(536);
       height: rem-calc(211);
+    }
+    @include breakpoint(medium-large){
+      left: auto;
+      margin-left: 0;
     }
   }
 }
