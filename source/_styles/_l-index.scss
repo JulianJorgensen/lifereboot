@@ -14,6 +14,10 @@
     height: rem-calc(545);
     padding-left: rem-calc(30);
     padding-right: rem-calc(30);
+
+    #landing-book-column{
+      @include flex-align(flex-end);
+    }
   }
 
   h1{
