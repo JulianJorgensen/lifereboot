@@ -5,7 +5,7 @@ clean:
 browsersync:
   notify: true
   open:   external
-  port:   3000
+  port:   4000
   url:    "liferebootbook.dev"
   server:
     basedir: "_site/"

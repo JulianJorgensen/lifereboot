@@ -3,12 +3,6 @@
   background: linear-gradient(351.48deg, #81B7DC 0%, #41539D 100%);
   @include content-color($white);
 
-  @include breakpoint(small-only){
-    #landing-book-column{
-      order: -1;
-    }
-  }
-
   @include breakpoint(medium){
     padding-top: 0;
     height: rem-calc(545);
