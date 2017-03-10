@@ -6,6 +6,18 @@ body{
   max-width: rem-calc(1024);
   margin: 0 auto;
   overflow: hidden;
+
+  footer{
+    padding: rem-calc(15 0);
+    font-size: rem-calc(12);
+    text-align: center;      
+    @include breakpoint(large){
+      text-align: right;
+    }
+    a{
+      color: $grey40;
+    }
+  }
 }
 
 .section{
