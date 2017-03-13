@@ -22,6 +22,41 @@ about_learn_how_to: |
 testimonial1: |
   <q>One of the best ways to heal and move on with your life is to first - tell the truth about where you are now. Sarah, with her honesty and heartfelt vulnerability, will lovingly guide you to listen to your inner voice so you can choose your own next step. That step will bring you closer to your destiny.</q>
   <author>Barry Spilchuk, Coauthor A Cup of Chicken Soup for the Soul</author>
+testimonial2: |
+  <q>A masterful debut into a powerful story that invites you through a journey of self-discovery of inner wealth. It's impossible to read this book and not come away thinking differently about the choices we make and the pressing need for all of us to live a more awakened life with blissful purpose.</q>
+  <author>Colleen Walski, author Growing Into Greatness</author>
+testimonial3: |
+  <q>Life Reboot is simply a must read! It is a great resource for anyone looking to make changes in their lives and don’t know where to start. If you want to change your outer life, you must first learn to go within. If you want to improve your body, mind and health, let Sarah guide you on an inner journey that will empower you to take your own journey of self-discovery deep within, finding some incredible jewels along the way.</q>
+  <author>Kathy Tuccaro, author Dream Big!</author>
+bio: |
+  <h2>SARAH WALL</h2>
+  <h4 class="subtitle">AUTHOR | SPEAKER | ENTREPRENEUR</h4>
+  <p>Sarah is the owner of Body Mind Spirit Coaching. She supports people to break through fear and limiting beliefs by clearing the clutter of the mind, using simple techniques that have immediate and powerful impact. She is also the co-founder of Yoga Vacations, providing a safe space for people to explore their inner world through meditation, while traveling to <span class="nobr">beautiful destinations.</span></p>
+  <div class="row">
+    <div class="small-12 medium-5 hide-for-large" id="mobile-sarah">
+      <img src="/images/Sarah.png" alt="Author Sarah Wall" />
+    </div>
+    <div class="small-12 medium-7 large-12 column">
+      <p>Sarah’s own journey into yoga, which began twenty years ago, has taken her around the world many times and sparked her passion to give back. She’s a proud board member of the Helping Hands for India charity, which runs a school in northern India, providing free education to over 300 children.</p>
+      <p>Incorporating mindfulness and meditation into her own life has been essential to her well-being when navigating life’s events and she’s excited to share her story to inspire others who are craving something more out of life.</p>
+      <div class="row" style="padding-bottom: 10px;">
+        <div class="small-12 large-5 columns text-center large-text-left align-middle">
+          <div class="socialmedia">
+            <a href="https://www.facebook.com/bodymindspiritcoach/" target="_new"><i class="fa fa-facebook-f"></i></a>
+            <a href="http://google.com/+Bodymindspiritcoach777" target="_new"><i class="fa fa-google-plus"></i></a>
+            <a href="https://ca.linkedin.com/in/sarah-wall-7a530b105" target="_new"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="small-12 large-5 columns text-center large-text-right">
+          <small>Partial proceeds donated to Helping Hands for India charity</small>
+        </div>
+        <div class="small-12 large-2 text-center large-text-right">
+          <img src="/images/helping-hands-logo-transparent.png" alt="Helping Hands logo" />
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 ---
 
@@ -92,12 +127,10 @@ testimonial1: |
       {{ page.testimonial1 }}
     </div>
     <div class="testimonial">
-      <q>A masterful debut into a powerful story that invites you through a journey of self-discovery of inner wealth. It's impossible to read this book and not come away thinking differently about the choices we make and the pressing need for all of us to live a more awakened life with blissful purpose.</q>
-      <author>Colleen Walski, author Growing Into Greatness</author>
+      {{ page.testimonial2 }}
     </div>
     <div class="testimonial">
-      <q>Life Reboot is simply a must read! It is a great resource for anyone looking to make changes in their lives and don’t know where to start. If you want to change your outer life, you must first learn to go within. If you want to improve your body, mind and health, let Sarah guide you on an inner journey that will empower you to take your own journey of self-discovery deep within, finding some incredible jewels along the way.</q>
-      <author>Kathy Tuccaro, author Dream Big!</author>
+    {{ page.testimonial2 }}
     </div>
   </div>
 </section>
@@ -106,14 +139,14 @@ testimonial1: |
 <section id="about-sarah" class="section">
   <div class="row">
     <div class="small-12 hide-for-large columns">
-      {% include sarah-bio.html %}
+      {{ page.bio }}
     </div>
 
     <div class="show-for-large large-5 columns" id="desktop-sarah">
       <img src="/images/Sarah.png" alt="Author Sarah Wall" />
     </div>
     <div class="show-for-large large-7 columns">
-      {% include sarah-bio.html %}
+      {{ page.bio }}
     </div>
   </div>
 </section>
