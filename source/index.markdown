@@ -1,13 +1,17 @@
 ---
 layout: default
 class: home
+title: Landing
+header: 'How big are your dreams? What will it cost you <strong>not</strong> to <span class="nobr">pursue them?</span>'
+header_paragraph: 'Be inspired to look within to find answers to life’s questions.'
+signup_text: 'SIGN UP FOR UPDATES AND FREE GIFTS'
 ---
 
 <section class="section-landing">
   <div class="row">
     <div class="small-12 medium-6 columns">
-      <h1>How big are your dreams? What will it cost you <strong>not</strong> to <span class="nobr">pursue them?</span></h1>
-      <p class="lead">Be inspired to look within to find answers to life’s questions.</p>
+      <h1>{{ page.header }}</h1>
+      <p class="lead">{{ page.header_paragraph}}</p>
     </div>
     <div class="small-12 medium-6 columns" id="landing-book-column">
       <img class="landing-book" src="/images/book.png" alt="LifeReboot book" />
@@ -21,7 +25,7 @@ class: home
 
 <section id="newsletter-signup" class="section">
   <div class="newsletter-signup-container">
-    <h3>SIGN UP FOR UPDATES AND FREE GIFTS</h3>
+    <h3>{{ page.signup_text }}</h3>
     <form data-abide method="POST" action="https://liferebootbook.activehosted.com/proc.php" id="newsletter-signup-form" novalidate>
       <input type="hidden" name="u" value="1" />
       <input type="hidden" name="f" value="1" />
