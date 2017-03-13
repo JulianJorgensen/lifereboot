@@ -5,6 +5,19 @@ title: Landing
 header: 'How big are your dreams? What will it cost you <strong>not</strong> to <span class="nobr">pursue them?</span>'
 header_paragraph: 'Be inspired to look within to find answers to life’s questions.'
 signup_text: 'SIGN UP FOR UPDATES AND FREE GIFTS'
+about_header: 'ABOUT LIFE REBOOT'
+about_callout_header: 'Are you feeling stuck in a rut?'
+about_callout_header2: 'Are you craving more out of life, from your job, your personal life, and relationships?'
+about_learn_how_to: |
+  <h4 id="learn-to">LEARN HOW TO...</h4>
+  <ul>
+    <li>Kick fear to the curb.</li>
+    <li>Transform limiting beliefs.</li>
+    <li>Unlock the answers to some of life’s most challenging questions.</li>
+    <li>Connect with others in a supportive community who share your struggles.</li>
+    <li>Feel balanced, calm and at peace, no matter what your circumstances.</li>
+    <li>Build the life you've been imagining and dreaming about.</li>
+  </ul>
 ---
 
 <section class="section-landing">
@@ -45,23 +58,15 @@ signup_text: 'SIGN UP FOR UPDATES AND FREE GIFTS'
 
 
 <section id="about" class="section">
-  <h2>ABOUT LIFE REBOOT</h2>
+  <h2>{{ page.about_header }}</h2>
   <div class="row">
     <div class="small-12 medium-6 columns">
-      <h3 class="callout-header">Are you feeling stuck in a rut?</h3>
+      <h3 class="callout-header">{{ page.about_callout_header }}</h3>
       <div class="separator small"></div>
-      <h3 class="callout-header">Are you craving more out of life, from your job, your personal life, and relationships?</h3>
+      <h3 class="callout-header">{{ page.about_callout_header2 }}</h3>
     </div>
     <div class="small-12 medium-6 columns">
-      <h4 id="learn-to">LEARN HOW TO...</h4>
-      <ul>
-        <li>Kick fear to the curb.</li>
-        <li>Transform limiting beliefs.</li>
-        <li>Unlock the answers to some of life’s most challenging questions.</li>
-        <li>Connect with others in a supportive community who share your struggles.</li>
-        <li>Feel balanced, calm and at peace, no matter what your circumstances.</li>
-        <li>Build the life you've been imagining and dreaming about.</li>
-      </ul>
+      {{ page.about_learn_how_to }}
     </div>
   </div>
 </section>
