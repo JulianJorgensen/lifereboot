@@ -1,4 +1,5 @@
 ---
+title: Landing
 layout: default
 class: home
 title: Landing
