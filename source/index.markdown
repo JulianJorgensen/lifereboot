@@ -2,13 +2,13 @@
 title: Landing
 layout: default
 class: home
-title: Landing
-header: 'How big are your dreams? What will it cost you <strong>not</strong> to <span class="nobr">pursue them?</span>'
-header_paragraph: 'Be inspired to look within to find answers to life’s questions.'
-signup_text: 'SIGN UP FOR UPDATES AND FREE GIFTS'
-about_header: 'ABOUT LIFE REBOOT'
-about_callout_header: 'Are you feeling stuck in a rut?'
-about_callout_header2: 'Are you craving more out of life, from your job, your personal life, and relationships?'
+header: How big are your dreams? What will it cost you <strong>not</strong> to <span
+  class="nobr">pursue them?</span>
+header_paragraph: Be inspired to look within to find answers to life’s questions.
+signup_text: SIGN UP FOR UPDATES AND FREE GIFTS
+about_header: ABOUT LIFE REBOOT
+about_callout_header: Are you feeling stuck in a rut?
+about_callout_header2: 'Are you craving more out of life, from your job,   your personal life, and relationships?'
 about_learn_how_to: |
   <h4 id="learn-to">LEARN HOW TO...</h4>
   <ul>
