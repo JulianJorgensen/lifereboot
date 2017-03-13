@@ -22,7 +22,6 @@ about_learn_how_to: |
 testimonial1: |
   <q>One of the best ways to heal and move on with your life is to first - tell the truth about where you are now. Sarah, with her honesty and heartfelt vulnerability, will lovingly guide you to listen to your inner voice so you can choose your own next step. That step will bring you closer to your destiny.</q>
   <author>Barry Spilchuk, Coauthor A Cup of Chicken Soup for the Soul</author>
-
 ---
 
 <section class="section-landing">
