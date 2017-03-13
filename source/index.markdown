@@ -1,10 +1,11 @@
 ---
+title: Landing
 layout: default
 class: home
-title: Landing
-header: 'How big are your dreams? What will it cost you <strong>not</strong> to <span class="nobr">pursue them?</span>'
-header_paragraph: 'Be inspired to look within to find answers to life’s questions.'
-signup_text: 'SIGN UP FOR UPDATES AND FREE GIFTS'
+header: How big are your dreams? What will it cost you <strong>not</strong> to <span
+  class="nobr">pursue them?</span>
+header_paragraph: Be inspired to look within to find answers to life’s questions.
+signup_text: SIGN UP FOR UPDATES AND FREE GIFTS
 ---
 
 <section class="section-landing">
