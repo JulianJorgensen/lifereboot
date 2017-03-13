@@ -19,6 +19,10 @@ about_learn_how_to: |
     <li>Feel balanced, calm and at peace, no matter what your circumstances.</li>
     <li>Build the life you've been imagining and dreaming about.</li>
   </ul>
+testimonial1: |
+  <q>One of the best ways to heal and move on with your life is to first - tell the truth about where you are now. Sarah, with her honesty and heartfelt vulnerability, will lovingly guide you to listen to your inner voice so you can choose your own next step. That step will bring you closer to your destiny.</q>
+  <author>Barry Spilchuk, Coauthor A Cup of Chicken Soup for the Soul</author>
+
 ---
 
 <section class="section-landing">
@@ -85,8 +89,7 @@ about_learn_how_to: |
 
   <div id="testimonials-slider" class="royalSlider rsDefault">
     <div class="testimonial">
-      <q>One of the best ways to heal and move on with your life is to first - tell the truth about where you are now. Sarah, with her honesty and heartfelt vulnerability, will lovingly guide you to listen to your inner voice so you can choose your own next step. That step will bring you closer to your destiny.</q>
-      <author>Barry Spilchuk, Coauthor A Cup of Chicken Soup for the Soul</author>
+      {{ page.testimonial1 }}
     </div>
     <div class="testimonial">
       <q>A masterful debut into a powerful story that invites you through a journey of self-discovery of inner wealth. It's impossible to read this book and not come away thinking differently about the choices we make and the pressing need for all of us to live a more awakened life with blissful purpose.</q>
