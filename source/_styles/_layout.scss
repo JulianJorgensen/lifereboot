@@ -10,7 +10,7 @@ body{
   footer{
     padding: rem-calc(15 0);
     font-size: rem-calc(12);
-    text-align: center;      
+    text-align: center;
     @include breakpoint(large){
       text-align: right;
     }
