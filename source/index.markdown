@@ -56,8 +56,6 @@ bio: |
       </div>
     </div>
   </div>
-
-
 ---
 
 <section class="section-landing">
