@@ -8,13 +8,13 @@ collections:
   uploads:
     title: Uploads
     output: true
-default_title: 'Life Reboot Book | Download Free Workbook | Sarah Wall '
+default_title: 'Life Reboot Book | Sarah Wall '
 default_description: 'Life Reboot: An Inner Wisdom Guide To Finding Your Passion and
   Purpose, by Sarah Wall. Be inspired to look within to find answers to life''s questions.'
 default_image: https://liferebootbook.com/images/lifereboot-book.png
 facebook: bodymindspiritcoach
 fb_id: 1205828536110926
-google-analytics-id: 
+google-analytics-id:
 skrollr: false
 prod_url: https://liferebootbook.com/
 env: development
