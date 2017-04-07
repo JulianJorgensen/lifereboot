@@ -14,7 +14,7 @@ default_description: 'Life Reboot: An Inner Wisdom Guide To Finding Your Passion
 default_image: https://liferebootbook.com/images/lifereboot-book.png
 facebook: bodymindspiritcoach
 fb_id: 1205828536110926
-google-analytics-id:
+google-analytics-id: 
 skrollr: false
 prod_url: https://liferebootbook.com/
 env: development
