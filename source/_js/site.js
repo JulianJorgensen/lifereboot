@@ -5,17 +5,36 @@
 $(document).foundation();
 
 $(document).ready(function(){
+  $('a').smoothScroll();
 
   $("#newsletter-signup-form").on("submit", function(ev) {
     ev.preventDefault();
   });
 
   $("#newsletter-signup-form").on("formvalid.zf.abide", function(e,frm) {
-    $.getJSON(this.action + "?callback=?",$(this).serialize());
-    $(".newsletter-signup-container").hide();
-    $("#newsletter-signup #thank-you").show();
+    register($(this));
   });
-  $('a').smoothScroll();
+
+
+  function register($form) {
+    $.ajax({
+      type: $form.attr('method'),
+      url: $form.attr('action'),
+      data: $form.serialize(),
+      cache       : false,
+      dataType    : 'json',
+      contentType: "application/json; charset=utf-8",
+      error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+      success     : function(data) {
+        if (data.result != "success") {
+          // Something went wrong, do something to notify the user. maybe alert(data.msg);
+        } else {
+          $(".newsletter-signup-container").hide();
+          $("#newsletter-signup #thank-you").show();
+        }
+      }
+    });
+  }
 
   // Email protector
   $('a[data-email-protector]').emailProtector()

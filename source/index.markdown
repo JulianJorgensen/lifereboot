@@ -78,18 +78,19 @@ bio: |
 <section id="newsletter-signup" class="section">
   <div class="newsletter-signup-container">
     <h3>{{ page.signup_text }}</h3>
-    <form data-abide method="POST" action="https://liferebootbook.activehosted.com/proc.php" id="newsletter-signup-form" novalidate>
-      <input type="hidden" name="u" value="1" />
-      <input type="hidden" name="f" value="1" />
-      <input type="hidden" name="s" />
-      <input type="hidden" name="c" value="0" />
-      <input type="hidden" name="m" value="0" />
-      <input type="hidden" name="act" value="sub" />
-      <input type="hidden" name="v" value="2" />
-      <input type="text" name="fullname" id="fullname" placeholder="Your name" required />
-      <input type="text" name="email" id="email" placeholder="Your email" pattern="email" required />
-      <input type="submit" class="button secondary" value="SIGN UP" />
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form id="newsletter-signup-form" action="//body-mind-spirit-coach.us12.list-manage.com/subscribe/post-json?u=413d0de2285ba5bb49d5b0b6b&amp;id=1e6c3809ec&amp;c=?" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" data-abide novalidate>
+    	<input type="email" value="" name="EMAIL" placeholder="Email" class="required email" id="mce-EMAIL">
+    	<input type="text" value="" name="FNAME" class="" placeholder="First name" id="mce-FNAME">
+    	<input type="text" value="" name="LNAME" class="" placeholder="Last name" id="mce-LNAME">
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_413d0de2285ba5bb49d5b0b6b_1e6c3809ec" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </form>
+    </div>
+    <!--End mc_embed_signup-->
+
     <small>By signing up you give permission for me to email you.</small>
   </div>
   <div id="thank-you"><h2>Thanks for signing up.</h2></div>

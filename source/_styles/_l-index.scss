@@ -118,7 +118,8 @@
         @include flex-align(center, middle);
         input{
           margin-right: rem-calc(10);
-          &[type=text]{
+          &[type=text],
+          &[type=email]{
             padding-left: rem-calc(20);
             font-style: normal;
             font-weight: bold;
