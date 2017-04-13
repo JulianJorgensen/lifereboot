@@ -114,18 +114,23 @@
     .newsletter-signup-container{
       width: rem-calc(620);
       form{
-        @include flex;
-        @include flex-align(center, middle);
-        input{
-          margin-right: rem-calc(10);
-          &[type=text],
-          &[type=email]{
-            padding-left: rem-calc(20);
-            font-style: normal;
-            font-weight: bold;
-            font-size: rem-calc(16);
-            &::-webkit-input-placeholder{
-              text-transform: uppercase;
+        .alert{
+          font-size: rem-calc(18);
+        }
+        .form-fields{
+          @include flex;
+          @include flex-align(center, middle);
+          input{
+            margin-right: rem-calc(10);
+            &[type=text],
+            &[type=email]{
+              padding-left: rem-calc(20);
+              font-style: normal;
+              font-weight: bold;
+              font-size: rem-calc(16);
+              &::-webkit-input-placeholder{
+                text-transform: uppercase;
+              }
             }
           }
         }

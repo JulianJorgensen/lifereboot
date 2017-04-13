@@ -82,11 +82,17 @@ bio: |
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
     <form id="newsletter-signup-form" action="//body-mind-spirit-coach.us12.list-manage.com/subscribe/post-json?u=413d0de2285ba5bb49d5b0b6b&amp;id=1e6c3809ec&amp;c=?" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" data-abide novalidate>
-    	<input type="email" value="" name="EMAIL" placeholder="Email" class="required email" id="mce-EMAIL">
+    <div data-abide-error class="alert callout" style="display: none;">
+      <p><i class="fi-alert"></i> Please fill out the required fields.</p>
+    </div>
+    <div id="mailchimp-error" class="alert callout" style="display: none;"></div>
+      <div class="form-fields">
+    	<input type="email" value="" name="EMAIL" placeholder="Email" class="required email" id="mce-EMAIL" required>
     	<input type="text" value="" name="FNAME" class="" placeholder="First name" id="mce-FNAME">
     	<input type="text" value="" name="LNAME" class="" placeholder="Last name" id="mce-LNAME">
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_413d0de2285ba5bb49d5b0b6b_1e6c3809ec" tabindex="-1" value=""></div>
       <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
     </form>
     </div>
     <!--End mc_embed_signup-->

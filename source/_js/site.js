@@ -7,14 +7,15 @@ $(document).foundation();
 $(document).ready(function(){
   $('a').smoothScroll();
 
-  $("#newsletter-signup-form").on("submit", function(ev) {
-    ev.preventDefault();
-  });
-
-  $("#newsletter-signup-form").on("formvalid.zf.abide", function(e,frm) {
-    register($(this));
-  });
-
+  $('#newsletter-signup-form')
+    // form validation passed, form will submit if submit event not returned false
+    .on("formvalid.zf.abide", function(ev,frm) {
+      register($(this));
+    })
+    // to prevent form from submitting upon successful validation
+    .on("submit", function(ev) {
+      ev.preventDefault();
+    });
 
   function register($form) {
     $.ajax({
@@ -27,7 +28,7 @@ $(document).ready(function(){
       error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
       success     : function(data) {
         if (data.result != "success") {
-          // Something went wrong, do something to notify the user. maybe alert(data.msg);
+          $('#newsletter-signup-form #mailchimp-error').show().html(data.msg);          
         } else {
           $(".newsletter-signup-container").hide();
           $("#newsletter-signup #thank-you").show();
